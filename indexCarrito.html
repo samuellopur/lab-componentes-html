@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Carrito de Compras</title>
+  <link rel="stylesheet" href="styleCarrito.css">
+</head>
+<body>
+  <h1>Lista Productos</h1>
+
+  <div class="producto">
+    <p>🥩 Carne - Precio: $<span id="precio-carne">80</span></p>
+    <button onclick="agregarAlCarrito('Manzana', 80)">Agregar al carrito</button>
+  </div>
+
+  <div class="producto">
+    <p>🍞 Pan - Precio: $<span id="precio-pan">15</span></p>
+    <button onclick="agregarAlCarrito('Pan', 15)">Agregar al carrito</button>
+  </div>
+
+  <div class="producto">
+    <p>🧀 Queso - Precio: $<span id="precio-queso">30</span></p>
+    <button onclick="agregarAlCarrito('Queso', 30)">Agregar al carrito</button>
+  </div>
+
+  <hr>
+
+  <h2>Resumen del Carrito</h2>
+  <p>Items totales: <span id="total-items">0</span></p>
+  <p>Precio total: $<span id="total-precio">0</span></p>
+  <button onclick="vaciarCarrito()">Vaciar carrito</button>
+
+  <script src="scriptCarrito.js"></script>
+</body>
+</html>
